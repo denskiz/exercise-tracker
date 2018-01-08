@@ -9,7 +9,7 @@ const User = require('./models/UserModel');
 const Exercise = require('./models/ExerciseModel');
 
 mongoose.connect(
-  'mongodb://dennis:dennis@ds241677.mlab.com:41677/fcc-exercise-tracker'
+ 
 );
 mongoose.Promise = global.Promise;
 
