@@ -102,6 +102,7 @@ app.get('/api/exercise/log/?:userId/:from?/:to?/:limit', (req, res) => {
     if (err) return res.status(400).send('Invalid userId');
     if (!user) return res.status(400).send('User not found');
 
+    // this is broken
     Exercise.find({ userId: userId })
       .where('date')
       // gte is a mongoBD method which selects the documents where the
