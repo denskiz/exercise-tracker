@@ -9,9 +9,8 @@ const User = require('./models/UserModel');
 const Exercise = require('./models/ExerciseModel');
 const moment = require('moment');
 
-mongoose.connect(
-  'mongodb://dennis:dennis@ds241677.mlab.com:41677/fcc-exercise-tracker'
-);
+mongoose.connect(process.env.MONGO_URI);
+
 mongoose.Promise = global.Promise;
 
 app.use(cors());
