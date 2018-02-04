@@ -1,4 +1,5 @@
 # exercise-tracker
-A Free Code Camp Project API
+A Free Code Camp Project API built with Node and MongoDB
 
-Still under construction
+
+https://exercise-tracker-de.herokuapp.com/
